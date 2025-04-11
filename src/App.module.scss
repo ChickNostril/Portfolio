@@ -1,0 +1,17 @@
+.app {
+	position: relative;
+	z-index: 0;
+	background-color: #f0eff0;
+
+	.appSection {
+		background-image: url("/src/assets/background.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.appContact {
+		position: relative;
+		z-index: 0;
+	}
+}
