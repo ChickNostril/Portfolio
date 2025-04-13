@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import styles from "./Hero.module.scss";
-import { ComputersCanvas } from "./canvas";
+// import { ComputersCanvas } from "./canvas";
 
 import Lottie from "lottie-react";
 import HeroImage from "../assets/Animation - 1744525804854.json";

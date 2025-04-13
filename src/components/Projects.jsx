@@ -2,7 +2,7 @@ import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
-import { backend } from "../assets";
+import { browse } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motions";
@@ -44,7 +44,7 @@ const ProjectCard = ({
 							className={styles.sourceCodeButton}
 						>
 							<img
-								src={backend}
+								src={browse}
 								alt="Preview"
 								className={styles.sourceCodeIcon}
 							/>
