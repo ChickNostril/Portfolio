@@ -1,6 +1,6 @@
 
 import close from "./icons/close.svg";
-import github from "./github.png";
+import github from "./tech/github.png";
 import logo from "./logo.svg";
 import menu from "./icons/menu.svg";
 import browse from "./icons/browse.png"
@@ -22,14 +22,14 @@ import typescript from "./tech/typescript.png";
 import kakaotech from "./company/kakaotech.png";
 import ncsoft from "./company/ncsoft.png";
 
-import cafesang from "./works/cafesang.webp";
-import covidtracker from "./works/covid-tracker.webp";
-import inutdesign from "./works/inut-design.webp";
-import kingstonedanang from "./works/kingstonedanang.webp";
-import noorcafe from "./works/noor-cafe.webp";
-import noorkombucha from "./works/noor-kombucha.webp";
-import taptaponme from "./works/taptaponme.webp";
-import portfolio2021 from "./works/portfolio-2021.webp";
+import starbucks from "./works/starbucks.png";
+import pokemon from "./works/pokemon.png";
+import community from "./works/Community.png";
+import hackerton from "./works/hackerton.png";
+import sumda from "./works/sumda.png";
+import autoRigger from "./works/autoRigger.png";
+import faViewer from "./works/faViewer.png";
+import gsViewer from "./works/gsViewer.png";
 
 import profileImage from "./profileImage.png"
 
@@ -54,13 +54,13 @@ export {
 	threejs,
 	kakaotech,
 	ncsoft,
-	cafesang,
-	covidtracker,
-	inutdesign,
-	kingstonedanang,
-	noorcafe,
-	noorkombucha,
-	taptaponme,
-	portfolio2021,
+	starbucks,
+	pokemon,
+	community,
+	hackerton,
+	sumda,
+	autoRigger,
+	faViewer,
+	gsViewer,
 	profileImage,
 };
