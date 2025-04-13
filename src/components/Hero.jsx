@@ -4,6 +4,10 @@ import { motion } from "framer-motion";
 import styles from "./Hero.module.scss";
 import { ComputersCanvas } from "./canvas";
 
+import Lottie from "lottie-react";
+import HeroImage from "../assets/Animation - 1744525804854.json";
+import HeroImage2 from "../assets/Animation - 1744525830405.json"
+
 const Hero = () => {
 	return (
 		<section className={styles.heroSection}>
@@ -25,7 +29,13 @@ const Hero = () => {
 					</p>
 				</div>
 			</div>
-			<ComputersCanvas />
+			<Lottie
+				animationData={HeroImage2} 
+				loop 
+				autoplay 
+				className={styles.heroAnimation} 
+			/>
+			{/* <ComputersCanvas /> */}
 
 			<div className={styles.scrollContainer}>
 				<a href="#about">

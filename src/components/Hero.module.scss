@@ -102,6 +102,31 @@
 	}
 }
 
+.heroAnimation {
+	position: absolute;
+	top: clamp(180px, 30vh, 350px);
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	pointer-events: none; // 애니메이션이 클릭을 방해하지 않도록
+	z-index: 0;
+	opacity: 0.9;
+
+	@media (min-width: 640px) {
+		width: 80%;
+		height: 80%;
+	}
+
+	@media (min-width: 1024px) {
+		width: 70%;
+		height: 70%;
+	}
+}
+
+
 .scrollContainer {
 	position: absolute;
 	bottom: 128px;
