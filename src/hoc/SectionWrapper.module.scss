@@ -1,0 +1,17 @@
+.hash_span {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
+}
+.container {
+  padding: 2.5rem 1.5rem; // py-10 px-6 (기본)
+  max-width: 80rem; // max-w-7xl = 1280px
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 0;
+
+  @media (min-width: 640px) {
+    padding: 4rem 2.5rem; // sm:py-16 sm:px-10
+  }
+}

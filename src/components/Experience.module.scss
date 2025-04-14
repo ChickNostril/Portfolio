@@ -1,65 +1,66 @@
 /* Experience.module.scss */
 .sectionSubText {
-    font-size: 14px;
-    color: #1e502a;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  font-size: 14px;
+  color: #1e502a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.sectionHeadText {
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.timelineWrapper {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  .timelineDate {
+    font-size: 32px !important;
+    padding: 0;
   }
-  
-  .sectionHeadText {
-    font-size: 32px;
-    font-weight: bold;
-    color: black;
-  }
-  
-  .timelineWrapper {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    .timelineDate{
-      font-size: 32px !important;
-      padding: 0;
-    }
-  }
-  
-  .iconWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .iconImage {
-    border-radius: 50px;
-    object-fit: contain;
-  }
-  
-  .title {
-    font-size: 24px !important;
-    font-weight: bold;
-    color: #1e502a;
-  }
-  
-  .company {
-    font-size: 20px !important;
-    font-weight: 600;
-    color: #59E97A;
-    margin: 0;
-  }
-  
-  .pointsList {
-    margin-top: 1.25rem;
-    padding-left: 1.25rem;
-    list-style-type: disc;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .point {
-    font-size: 18px;
-    color: black;
-    line-height: 1.6;
-  }
-  
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.iconImage {
+  border-radius: 50px;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 24px !important;
+  font-weight: bold;
+  color: #1e502a;
+}
+
+.company {
+  font-size: 20px !important;
+  font-weight: 600;
+  color: #59e97a;
+  margin: 0;
+}
+
+.pointsList {
+  margin-top: 1.25rem;
+  padding-left: 1.25rem;
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.point {
+  font-size: 18px;
+  color: black;
+  line-height: 1.6;
+}

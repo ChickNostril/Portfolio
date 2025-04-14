@@ -31,7 +31,7 @@ const Contact = () => {
             <strong>Email:</strong> strik241@gmail.com
           </div>
           <div>
-            <strong>Phone:</strong> +82-10-7127-1089
+            <strong>Phone:</strong> 010-7127-1089
           </div>
           <div>
             <strong>Address:</strong> 경기도 성남시 수정구 대왕판교로 1210
