@@ -18,7 +18,12 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+    >
       <Tilt
         options={{
           max: 45,
@@ -34,13 +39,9 @@ const ProjectCard = ({
             className={styles.projectImage}
           />
 
-          <div
-            // className="card-img_hover"
-            className={styles.imageOverlay}
-          >
+          <div className={styles.imageOverlay}>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              // className="black-gradient"
               className={styles.sourceCodeButton}
             >
               <img
@@ -78,7 +79,12 @@ const ProjectCard = ({
 const Projects = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div
+        variants={textVariant()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
@@ -86,6 +92,9 @@ const Projects = () => {
       <div className={styles.introWrapper}>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
           className={styles.introText}
         >
           저의 포트폴리오 프로젝트들은 다양한 기술과 접근 방식을 통해 실제

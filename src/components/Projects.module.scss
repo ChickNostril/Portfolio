@@ -1,128 +1,123 @@
+.projectCard {
+  background-color: #eee;
+  padding: 20px; // p-5
+  border-radius: 1rem; // rounded-2xl
+  width: 100%; // w-full
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 
+  @media (min-width: 640px) {
+    width: 360px; // sm:w-[360px]
+  }
+}
 
-  .projectCard {
-    background-color: #eee;
-    padding: 20px; // p-5
-    border-radius: 1rem; // rounded-2xl
-    width: 100%; // w-full
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  
-    @media (min-width: 640px) {
-      width: 360px; // sm:w-[360px]
-    }
-  }
-  
-  
-  .imageContainer {
-    position: relative;
-    width: 100%;
-    height: 230px;
-  }
-  
-  .projectImage {
-    width: 100%;        // w-full
-    height: 100%;       // h-full
-    object-fit: cover;  // object-cover
-    border-radius: 1rem; // rounded-2xl
-  }
-  
-  
-  .imageOverlay {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    justify-content: flex-end;
-    margin: 12px;
-  }
-  
-  .sourceCodeButton {
-    background: linear-gradient(135deg, #fff, #2600ff);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .sourceCodeIcon {
-    width: 70%;
-    height: 70%;
-    object-fit: contain;
-  }
-  
-  .projectInfo {
-    margin-top: 20px;
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 230px;
+}
 
-    .projectTitle {
-      color: black;
-      font-weight: bold;
-      font-size: 24px;
-    }
-    
-    .projectDescription {
-      margin-top: 8px;
-      color: #1e502a;
-      font-size: 14px;
-    }
+.projectImage {
+  width: 100%; // w-full
+  height: 100%; // h-full
+  object-fit: cover; // object-cover
+  border-radius: 1rem; // rounded-2xl
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin: 12px;
+}
+
+.sourceCodeButton {
+  background: linear-gradient(135deg, #fff, #2600ff);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sourceCodeIcon {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.projectInfo {
+  margin-top: 20px;
+
+  .projectTitle {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
   }
-  
-  .tagContainer {
-    margin-top: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  
-  .tag {
-    font-size: 14px;
-    color: #59E97A;
-  }
-  
-  .sectionSubText {
-    font-size: 14px;
-    color: #000;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    @media (min-width: 640px) {
-      font-size: 18px;
-    }
-  }
-  
-  .sectionHeadText {
+
+  .projectDescription {
+    margin-top: 8px;
     color: #1e502a;
-    font-weight: 900;
-    font-size: 30px;
-    @media (min-width: 480px) {
-      font-size: 40px;
-    }
-    @media (min-width: 640px) {
-      font-size: 50px;
-    }
-    @media (min-width: 768px) {
-      font-size: 60px;
-    }
+    font-size: 14px;
   }
-  
-  .introWrapper {
-    width: 100%;
-    display: flex;
+}
+
+.tagContainer {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font-size: 14px;
+  color: #59e97a;
+}
+
+.sectionSubText {
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  @media (min-width: 640px) {
+    font-size: 18px;
   }
-  
-  .introText {
-    margin-top: 12px;
-    color: #1e502a;
-    font-size: 17px;
-    max-width: 768px;
-    line-height: 30px;
+}
+
+.sectionHeadText {
+  color: #1e502a;
+  font-weight: 900;
+  font-size: 30px;
+  @media (min-width: 480px) {
+    font-size: 40px;
   }
-  
-  .projectList {
-    margin-top: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 35px;
-    justify-content: center;
+  @media (min-width: 640px) {
+    font-size: 50px;
   }
-  
+  @media (min-width: 768px) {
+    font-size: 60px;
+  }
+}
+
+.introWrapper {
+  width: 100%;
+  display: flex;
+}
+
+.introText {
+  margin-top: 12px;
+  color: #1e502a;
+  font-size: 17px;
+  max-width: 768px;
+  line-height: 30px;
+}
+
+.projectList {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+}
