@@ -180,10 +180,10 @@ const projects = [
     ],
     image: gsViewer,
     source_code_link:
-      "https://www.notion.so/Gaussian-Splatting-Web-Viewer-19126c839d63806bacdecc4c029b9c23",
+      "https://www.notion.so/Gaussian-Splatting-Web-Viewer-1d526c839d638079a18bfd6c1bdaed98?pvs=4",
   },
   {
-    name: "Sumda",
+    name: "숨쉬는 다람쥐 Sumda",
     description:
       "공공 데이터 API를 활용해 실시간 날씨와 대기질 정보 제공 및 다람쥐 육성 게이미피케이션 기능을 포함한 웹 서비스",
     tags: [
@@ -202,7 +202,7 @@ const projects = [
     ],
     image: sumda,
     source_code_link:
-      "https://www.notion.so/Shin-e6d892b2ee764c9baea009534e606ee3",
+      "https://www.notion.so/Sumda-1d526c839d6380da8bf4fefa9742bf71?pvs=4",
   },
   {
     name: "FA-WebViewer",
@@ -228,7 +228,8 @@ const projects = [
       },
     ],
     image: faViewer,
-    source_code_link: "https://tinspham.dev/",
+    source_code_link:
+      "https://www.notion.so/Fa-Web-Viewer-1d526c839d6380e7a084de9c7e735a33?pvs=4",
   },
   {
     name: "Auto Rigging Tool",
@@ -252,7 +253,8 @@ const projects = [
       { name: "Uvicorn" },
     ],
     image: autoRigger,
-    source_code_link: "https://kingstonedanang.com/",
+    source_code_link:
+      "https://www.notion.so/Auto-Rigger-Tool-1d526c839d6380a8a2edeeb7d863f046?pvs=4",
   },
   {
     name: "Pokemon",
@@ -273,7 +275,8 @@ const projects = [
       },
     ],
     image: pokemon,
-    source_code_link: "https://noor-cf.web.app/",
+    source_code_link:
+      "https://www.notion.so/Pokemon-1d526c839d63801f9f15ff8c22d9f07e?pvs=4",
   },
   {
     name: "Community",
@@ -294,7 +297,8 @@ const projects = [
       },
     ],
     image: community,
-    source_code_link: "https://noor-kombucha.web.app/",
+    source_code_link:
+      "https://www.notion.so/Community-1d526c839d6380eb9d99e02c748ecea2?pvs=4",
   },
   {
     name: "Starbucks Clone Coding",
@@ -318,7 +322,8 @@ const projects = [
       },
     ],
     image: starbucks,
-    source_code_link: "https://cafe-sang.web.app/",
+    source_code_link:
+      "https://www.notion.so/Starbucks-1d526c839d6380d8bbfacf80ce958ad3?pvs=4",
   },
   {
     name: "Hackerton",
@@ -339,7 +344,8 @@ const projects = [
       },
     ],
     image: hackerton,
-    source_code_link: "https://covid-tracker-dksgsd.surge.sh/",
+    source_code_link:
+      "https://www.notion.so/Hackerton-1d526c839d63803d8f88c3886529f8fe?pvs=4",
   },
 ];
 
