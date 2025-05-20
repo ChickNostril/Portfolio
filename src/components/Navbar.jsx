@@ -22,7 +22,8 @@ const Navbar = () => {
         >
           <img src={profileImage} alt="logo" className={styles.logoImg} />
           <p className={styles.logoText}>
-            Shin Jeongyeob <span className={styles.logoSubText}>| Dev</span>
+            Shin Jeongyeob&nbsp;
+            <span className={styles.logoSubText}> | Dev</span>
           </p>
         </Link>
 

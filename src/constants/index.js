@@ -119,20 +119,6 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Full-stack & Cloud Engineering",
-    company_name: "KakaoTech Bootcamp Cloud Native Jeju",
-    icon: kakaotech,
-    iconBg: "#ffce03",
-    date: "Apr 2024 - Oct 2024",
-    points: [
-      "클라우드 기반 실무형 개발자 양성을 목표로 한 KakaoTech Cloud Native Jeju 과정 수료",
-      "4개월간의 자기주도 학습을 통해 프론트엔드 및 백엔드, 클라우드 핵심 기술 심화 학습",
-      "제주 오프라인 과정에서 프론트엔드·백엔드 협업 기반의 팀 프로젝트 진행으로, 실무 중심 개발 프로세스 경험",
-      "클라우드 환경에서의 개발 및 배포 경험을 통해 CI/CD, Docker, AWS 환경에 대한 실전 감각 습득",
-      "협업을 위한 Git 기반 버전 관리, Notion & Figma를 활용한 기획·디자인 커뮤니케이션 역량 향상",
-    ],
-  },
-  {
     title: "Front-end Engineering",
     company_name: "NCSOFT",
     icon: ncsoft,
@@ -146,6 +132,20 @@ const experiences = [
       "React와 Three.js를 활용하여 사용자 친화적인 3D 인터페이스와 효율적인 UI/UX 설계",
       "FastAPI와 React를 통해 데이터 처리와 UI 간 원활한 통신 구현",
       "AWS S3와 GPU 서버와의 통신을 통한 파일 업로드 및 복잡한 처리 지원",
+    ],
+  },
+  {
+    title: "Full-stack & Cloud Engineering",
+    company_name: "KakaoTech Bootcamp Cloud Native Jeju",
+    icon: kakaotech,
+    iconBg: "#ffce03",
+    date: "Apr 2024 - Oct 2024",
+    points: [
+      "클라우드 기반 실무형 개발자 양성을 목표로 한 KakaoTech Cloud Native Jeju 과정 수료",
+      "4개월간의 자기주도 학습을 통해 프론트엔드 및 백엔드, 클라우드 핵심 기술 심화 학습",
+      "제주 오프라인 과정에서 프론트엔드·백엔드 협업 기반의 팀 프로젝트 진행으로, 실무 중심 개발 프로세스 경험",
+      "클라우드 환경에서의 개발 및 배포 경험을 통해 CI/CD, Docker, AWS 환경에 대한 실전 감각 습득",
+      "협업을 위한 Git 기반 버전 관리, Notion & Figma를 활용한 기획·디자인 커뮤니케이션 역량 향상",
     ],
   },
 ];
@@ -181,28 +181,6 @@ const projects = [
     image: gsViewer,
     source_code_link:
       "https://www.notion.so/Gaussian-Splatting-Web-Viewer-1d526c839d638079a18bfd6c1bdaed98?pvs=4",
-  },
-  {
-    name: "숨쉬는 다람쥐 Sumda",
-    description:
-      "공공 데이터 API를 활용해 실시간 날씨와 대기질 정보 제공 및 다람쥐 육성 게이미피케이션 기능을 포함한 웹 서비스",
-    tags: [
-      {
-        name: "React",
-      },
-      {
-        name: "TypeScript",
-      },
-      {
-        name: "CSS",
-      },
-      {
-        name: "Zustand",
-      },
-    ],
-    image: sumda,
-    source_code_link:
-      "https://www.notion.so/Sumda-1d526c839d6380da8bf4fefa9742bf71?pvs=4",
   },
   {
     name: "FA-WebViewer",
@@ -257,26 +235,26 @@ const projects = [
       "https://www.notion.so/Auto-Rigger-Tool-1d526c839d6380a8a2edeeb7d863f046?pvs=4",
   },
   {
-    name: "Pokemon",
+    name: "숨쉬는 다람쥐 Sumda",
     description:
-      "React와 Styled-components로 도감 구현 및 Firebase로 OAuth 로그인 및 배포를 완료한 개인 프로젝트",
+      "공공 데이터 API를 활용해 실시간 날씨와 대기질 정보 제공 및 다람쥐 육성 게이미피케이션 기능을 포함한 웹 서비스",
     tags: [
       {
         name: "React",
       },
       {
-        name: "JavaScript",
+        name: "TypeScript",
       },
       {
-        name: "Styled Components",
+        name: "CSS",
       },
       {
-        name: "Firebase",
+        name: "Zustand",
       },
     ],
-    image: pokemon,
+    image: sumda,
     source_code_link:
-      "https://www.notion.so/Pokemon-1d526c839d63801f9f15ff8c22d9f07e?pvs=4",
+      "https://www.notion.so/Sumda-1d526c839d6380da8bf4fefa9742bf71?pvs=4",
   },
   {
     name: "Community",
@@ -299,6 +277,28 @@ const projects = [
     image: community,
     source_code_link:
       "https://www.notion.so/Community-1d526c839d6380eb9d99e02c748ecea2?pvs=4",
+  },
+  {
+    name: "Pokemon",
+    description:
+      "React와 Styled-components로 도감 구현 및 Firebase로 OAuth 로그인 및 배포를 완료한 개인 프로젝트",
+    tags: [
+      {
+        name: "React",
+      },
+      {
+        name: "JavaScript",
+      },
+      {
+        name: "Styled Components",
+      },
+      {
+        name: "Firebase",
+      },
+    ],
+    image: pokemon,
+    source_code_link:
+      "https://www.notion.so/Pokemon-1d526c839d63801f9f15ff8c22d9f07e?pvs=4",
   },
   {
     name: "Starbucks Clone Coding",
