@@ -13,6 +13,7 @@ import nodejs from "./tech/nodejs.png";
 import fastapi from "./tech/fastapi.png";
 import express from "./tech/express.png";
 import reactjs from "./tech/reactjs.png";
+import vuejs from "./tech/vuejs.png";
 import redux from "./tech/redux.png";
 import zustand from "./tech/zustand.png"
 import tailwind from "./tech/tailwind.png";
@@ -21,6 +22,7 @@ import typescript from "./tech/typescript.png";
 
 import kakaotech from "./company/kakaotech.png";
 import ncsoft from "./company/ncsoft.png";
+import eakorea from "./company/eakorea.png";
 
 import starbucks from "./works/starbucks.png";
 import pokemon from "./works/pokemon.png";
@@ -30,6 +32,8 @@ import sumda from "./works/sumda.png";
 import autoRigger from "./works/autoRigger.png";
 import faViewer from "./works/faViewer.png";
 import gsViewer from "./works/gsViewer.png";
+import alpaca from "./works/alpaca.png";
+import fo4book from "./works/fo4book.png"
 
 import profileImage from "./profileImage.png"
 
@@ -47,6 +51,7 @@ export {
 	express,
 	fastapi,
 	reactjs,
+	vuejs,
 	redux,
 	zustand,
 	tailwind,
@@ -54,6 +59,7 @@ export {
 	threejs,
 	kakaotech,
 	ncsoft,
+	eakorea,
 	starbucks,
 	pokemon,
 	community,
@@ -62,5 +68,7 @@ export {
 	autoRigger,
 	faViewer,
 	gsViewer,
+	alpaca,
+	fo4book,
 	profileImage,
 };

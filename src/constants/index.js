@@ -1,4 +1,5 @@
 import {
+  eakorea,
   ncsoft,
   kakaotech,
   css,
@@ -7,6 +8,7 @@ import {
   javascript,
   nodejs,
   reactjs,
+  vuejs,
   redux,
   tailwind,
   threejs,
@@ -14,6 +16,8 @@ import {
   zustand,
   fastapi,
   express,
+  fo4book,
+  alpaca,
   gsViewer,
   faViewer,
   sumda,
@@ -57,6 +61,10 @@ const services = [
     icon: reactjs,
   },
   {
+    title: "Vue",
+    icon: vuejs,
+  },
+  {
     title: "Zustand",
     icon: zustand,
   },
@@ -96,6 +104,10 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Vue JS",
+    icon: vuejs,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -118,6 +130,22 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "Web Software Engineering",
+    company_name: "EA Korea",
+    icon: eakorea,
+    iconBg: "#ffffff",
+    date: "Jun 2026 - Present",
+    points: [
+      "FO4BOOK 프로젝트의 Web SE 직무를 수행하며 FIFA Online 4 게임 운영 및 관리를 위한 사내 웹 서비스 개발 및 유지보수 담당",
+      "Vue 2와 Vuetify 기반 계정 관리, 데이터 조회 및 검색, 시즌 보상, Featureset 관리 등 게임 운영 기능 개발",
+      "게임 Static Data 및 다국어 데이터 연동 (i18n Key) 및 XLSX/JSON 기반 Import/Export 기능 구현해 게임 데이터 관리 환경 구축",
+      "대규모 게임 데이터 효율적으로 조회하고 관리할 수 있도록 데이터 테이블, 검색 및 필터링 등 운영 기능 개발",
+      "Node.js 기반의 스크립트를 활용하여 Static Data 다운로드 및 데이터 처리 자동화 환경 구축",
+      "게임 운영 과정에서 발생하는 다양한 요구사항을 분석하고 Frontend 기능 개발 및 유지보수를 수행하며 안정적인 서비스 운영 지원",
+      "Vue 2 기반 기존 서비스의 구조와 공통 컴포넌트를 분석하고 기존 코드베이스에 맞춰 기능을 확장하며 실무 개발 역량 강화"
+    ],
+  },
   {
     title: "Front-end Engineering",
     company_name: "NCSOFT",
@@ -152,6 +180,56 @@ const experiences = [
 
 const projects = [
   {
+    name: "FO4BOOK",
+    description:
+      "FIFA Online 4의 게임 운영 및 데이터 관리를 위한 사내 웹 서비스의 Frontend 개발 및 유지보수",
+    tags: [
+      {
+        name: "Vue 2",
+      },
+      {
+        name: "Vuetify",
+      },
+      {
+        name: "JavaScript",
+      },
+      {
+        name: "Node.js / Express",
+      },
+      {
+        name: "P4V",
+      },
+    ],
+    image: fo4book,
+    source_code_link:
+      "https://app.notion.com/p/FO4BOOK-3d626c839d63808cb12ce5ba5cd3dd6a?source=copy_link",
+  },
+  {
+    name: "Alpaca",
+    description:
+      "AI 기반 Jira 업무, 일정, 리포트 자동화 및 Slack 알림 기능을 제공하는 사내 업무 협업 관리 도구 개발 및 유지보수",
+    tags: [
+      {
+        name: "Python",
+      },
+      {
+        name: "OpenAI GPT-3.5",
+      },
+      {
+        name: "JIRA API",
+      },
+      {
+        name: "Docker",
+      },
+      {
+        name: "Slack API",
+      },
+    ],
+    image: alpaca,
+    source_code_link:
+      "https://app.notion.com/p/Alpaca-3d626c839d638033bbecd37e6ae3b0c3?source=copy_link",
+  },
+  {
     name: "Gaussian Splatter Viewer",
     description:
       "3D Gaussian Splatting 기술을 활용한 웹 기반 3D 데이터 시각화 애플리케이션 개발",
@@ -180,7 +258,7 @@ const projects = [
     ],
     image: gsViewer,
     source_code_link:
-      "https://www.notion.so/Gaussian-Splatting-Web-Viewer-1d526c839d638079a18bfd6c1bdaed98?pvs=4",
+      "https://app.notion.com/p/Gaussian-Splatting-Web-Viewer-1d526c839d638079a18bfd6c1bdaed98?source=copy_link",
   },
   {
     name: "FA-WebViewer",
@@ -207,7 +285,7 @@ const projects = [
     ],
     image: faViewer,
     source_code_link:
-      "https://www.notion.so/Fa-Web-Viewer-1d526c839d6380e7a084de9c7e735a33?pvs=4",
+      "https://app.notion.com/p/Fa-Web-Viewer-1d526c839d6380e7a084de9c7e735a33?source=copy_link",
   },
   {
     name: "Auto Rigging Tool",
@@ -232,7 +310,7 @@ const projects = [
     ],
     image: autoRigger,
     source_code_link:
-      "https://www.notion.so/Auto-Rigger-Tool-1d526c839d6380a8a2edeeb7d863f046?pvs=4",
+      "https://app.notion.com/p/Auto-Rigger-Tool-1d526c839d6380a8a2edeeb7d863f046?source=copy_link",
   },
   {
     name: "숨쉬는 다람쥐 Sumda",
@@ -254,7 +332,7 @@ const projects = [
     ],
     image: sumda,
     source_code_link:
-      "https://www.notion.so/Sumda-1d526c839d6380da8bf4fefa9742bf71?pvs=4",
+      "https://app.notion.com/p/Sumda-1d526c839d6380da8bf4fefa9742bf71?source=copy_link",
   },
   {
     name: "Community",
@@ -276,7 +354,7 @@ const projects = [
     ],
     image: community,
     source_code_link:
-      "https://www.notion.so/Community-1d526c839d6380eb9d99e02c748ecea2?pvs=4",
+      "https://app.notion.com/p/Community-1d526c839d6380eb9d99e02c748ecea2?source=copy_link",
   },
   {
     name: "Pokemon",
@@ -298,7 +376,7 @@ const projects = [
     ],
     image: pokemon,
     source_code_link:
-      "https://www.notion.so/Pokemon-1d526c839d63801f9f15ff8c22d9f07e?pvs=4",
+      "https://app.notion.com/p/Pokemon-1d526c839d63801f9f15ff8c22d9f07e?source=copy_link",
   },
   {
     name: "Starbucks Clone Coding",
@@ -323,7 +401,7 @@ const projects = [
     ],
     image: starbucks,
     source_code_link:
-      "https://www.notion.so/Starbucks-1d526c839d6380d8bbfacf80ce958ad3?pvs=4",
+      "https://app.notion.com/p/Starbucks-1d526c839d6380d8bbfacf80ce958ad3?source=copy_link",
   },
   {
     name: "Hackerton",
@@ -345,7 +423,7 @@ const projects = [
     ],
     image: hackerton,
     source_code_link:
-      "https://www.notion.so/Hackerton-1d526c839d63803d8f88c3886529f8fe?pvs=4",
+      "https://app.notion.com/p/Hackerton-1d526c839d63803d8f88c3886529f8fe?source=copy_link",
   },
 ];
 
