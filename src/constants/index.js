@@ -135,7 +135,7 @@ const experiences = [
     company_name: "EA Korea",
     icon: eakorea,
     iconBg: "#ffffff",
-    date: "Jun 2026 - Present",
+    date: "Jun 2025 - Present",
     points: [
       "FO4BOOK 프로젝트의 Web SE 직무를 수행하며 FIFA Online 4 게임 운영 및 관리를 위한 사내 웹 서비스 개발 및 유지보수 담당",
       "Vue 2와 Vuetify 기반 계정 관리, 데이터 조회 및 검색, 시즌 보상, Featureset 관리 등 게임 운영 기능 개발",
