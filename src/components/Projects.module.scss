@@ -1,19 +1,36 @@
 .projectCard {
   background-color: #eee;
-  padding: 20px; // p-5
+  padding: clamp(14px, 4vw, 20px); // p-5
   border-radius: 1rem; // rounded-2xl
   width: 100%; // w-full
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
+  }
+
+  &:focus-visible {
+    outline: 3px solid #59e97a;
+    outline-offset: 4px;
+  }
 
   @media (min-width: 640px) {
     width: 360px; // sm:w-[360px]
   }
 }
 
+.projectCardContent {
+  width: 100%;
+  height: 100%;
+}
+
 .imageContainer {
   position: relative;
   width: 100%;
-  height: 230px;
+  height: clamp(180px, 52vw, 230px);
 }
 
 .projectImage {
@@ -23,33 +40,8 @@
   border-radius: 1rem; // rounded-2xl
 }
 
-.imageOverlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  justify-content: flex-end;
-  margin: 12px;
-}
-
-.sourceCodeButton {
-  background: linear-gradient(135deg, #fff, #2600ff);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.sourceCodeIcon {
-  width: 70%;
-  height: 70%;
-  object-fit: contain;
-}
-
 .projectInfo {
-  margin-top: 20px;
+  margin-top: clamp(12px, 3vw, 20px);
 
   .projectTitle {
     color: black;
@@ -60,7 +52,7 @@
   .projectDescription {
     margin-top: 8px;
     color: #1e502a;
-    font-size: 14px;
+    font-size: clamp(13px, 3.3vw, 14px);
   }
 }
 
@@ -109,15 +101,15 @@
 .introText {
   margin-top: 12px;
   color: #1e502a;
-  font-size: 17px;
+  font-size: clamp(15px, 3.5vw, 17px);
   max-width: 768px;
-  line-height: 30px;
+  line-height: 1.7;
 }
 
 .projectList {
-  margin-top: 80px;
+  margin-top: clamp(2.5rem, 8vw, 5rem);
   display: flex;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: clamp(1rem, 3.8vw, 35px);
   justify-content: center;
 }

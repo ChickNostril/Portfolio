@@ -34,7 +34,7 @@ const Contact = () => {
             <strong>Phone:</strong> 010-7127-1089
           </div>
           <div>
-            <strong>Address:</strong> 경기도 성남시 수정구 대왕판교로 1210
+            <strong>Address:</strong> 경기도 용인시 수지구 포은대로
           </div>
         </div>
       </motion.div>

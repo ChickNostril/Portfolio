@@ -1,26 +1,44 @@
 /* Experience.module.scss */
 .sectionSubText {
-  font-size: 14px;
+  font-size: 12px;
   color: #1e502a;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.4px;
   text-align: center;
+
+  @media (min-width: 1024px) {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
 }
 
 .sectionHeadText {
-  font-size: 32px;
+  font-size: clamp(24px, 7vw, 32px);
   font-weight: bold;
   color: black;
   text-align: center;
+
+  @media (min-width: 1024px) {
+    font-size: 32px;
+  }
 }
 
 .timelineWrapper {
-  margin-top: 5rem;
+  margin-top: clamp(2rem, 8vw, 5rem);
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 1024px) {
+    margin-top: 5rem;
+  }
+
   .timelineDate {
-    font-size: 32px !important;
+    font-size: clamp(14px, 4.2vw, 24px) !important;
     padding: 0;
+
+    @media (min-width: 1024px) {
+      font-size: 32px !important;
+    }
   }
 }
 
@@ -38,29 +56,48 @@
 }
 
 .title {
-  font-size: 24px !important;
+  font-size: clamp(18px, 5vw, 24px) !important;
   font-weight: bold;
   color: #1e502a;
+
+  @media (min-width: 1024px) {
+    font-size: 24px !important;
+  }
 }
 
 .company {
-  font-size: 20px !important;
+  font-size: clamp(14px, 4vw, 20px) !important;
   font-weight: 600;
   color: #59e97a;
   margin: 0;
+
+  @media (min-width: 1024px) {
+    font-size: 20px !important;
+  }
 }
 
 .pointsList {
-  margin-top: 1.25rem;
-  padding-left: 1.25rem;
+  margin-top: clamp(0.75rem, 2.4vw, 1.25rem);
+  padding-left: clamp(0.9rem, 2.4vw, 1.25rem);
   list-style-type: disc;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: clamp(0.35rem, 1.5vw, 0.5rem);
+
+  @media (min-width: 1024px) {
+    margin-top: 1.25rem;
+    padding-left: 1.25rem;
+    gap: 0.5rem;
+  }
 }
 
 .point {
-  font-size: 18px;
+  font-size: clamp(13px, 3.7vw, 18px);
   color: black;
-  line-height: 1.6;
+  line-height: 1.5;
+
+  @media (min-width: 1024px) {
+    font-size: 18px;
+    line-height: 1.6;
+  }
 }

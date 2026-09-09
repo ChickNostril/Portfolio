@@ -8,7 +8,7 @@
 }
 
 .sectionHeadText {
-	font-size: 40px;
+	font-size: clamp(30px, 8vw, 40px);
 	font-weight: 900;
 	color: black;
 }
@@ -16,25 +16,29 @@
 .paragraph {
 	margin-top: 1rem;
 	color: #1e502a;
-	font-size: 17px;
+	font-size: clamp(15px, 3.5vw, 17px);
 	max-width: 768px;
-	line-height: 30px;
+	line-height: 1.7;
 }
 
 .serviceWrapper {
-	margin-top: 5rem;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 2.5rem;
-	justify-content: center;
+	margin-top: clamp(2.25rem, 7vw, 5rem);
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: clamp(0.6rem, 2.6vw, 1.2rem);
+
+	@media (min-width: 768px) {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: clamp(1rem, 3vw, 2rem);
+	}
+
+	@media (min-width: 1024px) {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
 }
 
 .tilt {
 	width: 100%;
-
-	@media (min-width: 480px) {
-		width: 250px;
-	}
 }
 
 .cardOuter {
@@ -47,23 +51,24 @@
 
 .cardInner {
 	border-radius: 20px;
-	padding: 1.25rem 3rem;
-	min-height: 280px;
+	padding: clamp(0.8rem, 2.4vw, 1.25rem) clamp(0.5rem, 2.8vw, 1.25rem);
+	min-height: clamp(150px, 28vw, 220px);
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: center;
+	gap: clamp(0.4rem, 1.8vw, 0.8rem);
 	align-items: center;
 }
 
 .cardIcon {
-	width: 5rem;
-	height: 5rem;
+	width: clamp(2.2rem, 9vw, 4.2rem);
+	height: clamp(2.2rem, 9vw, 4.2rem);
 	object-fit: contain;
 }
 
 .cardTitle {
 	color: white;
-	font-size: 20px;
+	font-size: clamp(13px, 3.1vw, 20px);
 	font-weight: bold;
 	text-align: center;
 }

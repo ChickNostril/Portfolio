@@ -2,7 +2,6 @@ import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
-import { browse } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motions";
@@ -17,6 +16,10 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
+  const openProject = () => {
+    window.open(source_code_link, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <motion.div
       initial="hidden"
@@ -32,44 +35,33 @@ const ProjectCard = ({
         }}
         className={styles.projectCard}
       >
-        <div className={styles.imageContainer}>
-          <img
-            src={image}
-            alt="project_image"
-            className={styles.projectImage}
-          />
-
-          <div className={styles.imageOverlay}>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className={styles.sourceCodeButton}
-            >
-              <img
-                src={browse}
-                alt="Preview"
-                className={styles.sourceCodeIcon}
-              />
-            </div>
+        <div className={styles.projectCardContent} onClick={openProject}>
+          <div className={styles.imageContainer}>
+            <img
+              src={image}
+              alt="project_image"
+              className={styles.projectImage}
+            />
           </div>
-        </div>
 
-        <div className={styles.projectInfo}>
-          <h3 className={styles.projectTitle}>{name}</h3>
-          <p className={styles.projectDescription}>{description}</p>
-        </div>
+          <div className={styles.projectInfo}>
+            <h3 className={styles.projectTitle}>{name}</h3>
+            <p className={styles.projectDescription}>{description}</p>
+          </div>
 
-        <div className={styles.tagContainer}>
-          {tags.map((tag) => (
-            // <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
-            // 		#{tag.name}
-            // </p>
-            <p
-              key={`${name}-${tag.name}`}
-              className={`${styles.tag} ${styles[tag.color]}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
+          <div className={styles.tagContainer}>
+            {tags.map((tag) => (
+              // <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
+              // 		#{tag.name}
+              // </p>
+              <p
+                key={`${name}-${tag.name}`}
+                className={`${styles.tag} ${styles[tag.color]}`}
+              >
+                #{tag.name}
+              </p>
+            ))}
+          </div>
         </div>
       </Tilt>
     </motion.div>

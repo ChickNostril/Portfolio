@@ -1,20 +1,23 @@
 .heroSection {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   margin: 0 auto;
+  padding-bottom: clamp(72px, 10vh, 120px);
 }
 
 .heroContainer {
-  position: absolute;
-  inset: 0;
-  top: 100px;
+  position: relative;
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: clamp(0.2rem, 0.7vh, 0.55rem);
+  padding-top: clamp(72px, 10vh, 108px);
   padding-left: 24px;
   padding-right: 24px;
 
@@ -22,50 +25,58 @@
     padding-left: 64px;
     padding-right: 64px;
   }
+
+  @media (min-width: 1024px) {
+    gap: clamp(0.5rem, 1.2vh, 1rem);
+  }
+}
+
+.textColumn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: clamp(10px, 2.8vw, 20px);
+  width: 100%;
 }
 
 .decorator {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 8px;
+
+  @media (min-width: 640px) {
+    margin-top: 14px;
+  }
 }
 
 .circle {
-  width: 20px;
-  height: 20px;
+  width: clamp(12px, 2.4vw, 20px);
+  height: clamp(12px, 2.4vw, 20px);
   border-radius: 9999px;
   background-color: #59e97a;
 }
 
 .violetLine {
-  width: 4px;
-  height: 160px;
+  width: clamp(2px, 0.8vw, 4px);
+  height: clamp(80px, 18vh, 140px);
   background: linear-gradient(to bottom, #59e97a, transparent);
 
   @media (min-width: 640px) {
-    height: 320px;
+    height: clamp(150px, 24vh, 240px);
   }
 }
 
 .heroHeadText {
   font-weight: 900;
   color: white;
-  margin-top: 8px;
-  font-size: 40px;
-  line-height: 48px;
-
-  @media (min-width: 480px) {
-    font-size: 50px;
-  }
-
-  @media (min-width: 640px) {
-    font-size: 60px;
-  }
+  margin-top: 0;
+  font-size: clamp(30px, 8.8vw, 72px);
+  line-height: 1.12;
 
   @media (min-width: 1024px) {
-    font-size: 80px;
-    line-height: 98px;
+    font-size: 72px;
+    line-height: 1.08;
   }
 }
 
@@ -76,21 +87,13 @@
 .heroSubText {
   color: #1e502a;
   font-weight: 500;
-  margin-top: 8px;
-  font-size: 16px;
-  line-height: 24px;
-
-  @media (min-width: 480px) {
-    font-size: 20px;
-  }
-
-  @media (min-width: 640px) {
-    font-size: 26px;
-  }
+  margin-top: clamp(2px, 0.7vh, 8px);
+  font-size: clamp(14px, 3.6vw, 26px);
+  line-height: 1.35;
 
   @media (min-width: 1024px) {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 28px;
+    line-height: 1.35;
   }
 }
 
@@ -103,39 +106,34 @@
 }
 
 .heroAnimation {
-  position: absolute;
-  top: clamp(180px, 30vh, 350px);
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  transform: translate3d(0px, 35px, 0px); // 원하는 y축 위치 조정
+  width: min(100%, 980px);
+  height: clamp(320px, 48vh, 700px);
+  margin: 0 auto;
+  margin-top: 0;
   pointer-events: none; // 클릭 방해 방지
-  z-index: 0;
+  z-index: 1;
   opacity: 0.9;
+  transform: none;
 
   @media (min-width: 640px) {
-    width: 80%;
-    height: 80%;
+    width: min(100%, 1020px);
+    height: clamp(380px, 54vh, 740px);
   }
 
   @media (min-width: 1024px) {
-    width: 70%;
-    height: 70%;
+    width: min(100%, 1100px);
+    height: clamp(430px, 58vh, 780px);
+    margin: 0 auto;
   }
 }
 
 .scrollContainer {
   position: absolute;
-  bottom: 128px;
+  bottom: clamp(20px, 4vh, 56px);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media (min-width: 640px) {
-    bottom: 40px;
-  }
 }
 
 .scrollBox {
